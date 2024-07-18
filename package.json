@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "React App Boilerplate by Abhijeet Kolay",
   "scripts": {
-    "test": "jest",
-    "start": "npx parcel index.html",
-    "build": "npx parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,17 @@
   },
   "homepage": "https://github.com/abhiK2509/react-app-boilerplate-AK#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.39",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.6"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.0"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 Chrome version",
     "last 2 Firefox version"
   ]
