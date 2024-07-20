@@ -6,13 +6,17 @@ import Body from './src/components/Body';
 import About from './src/components/About';
 import Contact from './src/components/Contact';
 import Error from './src/components/Error';
+import { Provider } from 'react-redux';
+import appStore from './src/utils/appStore';
 
 const AppLayout = () => {
     return (
-        <div className="app">
-            <Header />
-            <Outlet />
-        </div>
+        <Provider store={appStore}>
+            <div className="app">
+                <Header />
+                <Outlet />
+            </div>
+        </Provider>
     );
 };
 
