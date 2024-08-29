@@ -32,6 +32,15 @@ const Header = () => {
           <li className="px-4">
             <Link to="/accordion">Accordion</Link>
           </li>
+          <li className="px-4">
+            <Link to="/comments">Nested Comments</Link>
+          </li>
+          <li className="px-4">
+            <Link to="/image-slider">Image Slider</Link>
+          </li>
+          <li className="px-4">
+            <Link to="/pagination">Pagination</Link>
+          </li>
           <li className="px-4 font-bold">Cart - ({cartItems.length} Items)</li>
           <li className="px-4">
             <Link to="/login">Login</Link>

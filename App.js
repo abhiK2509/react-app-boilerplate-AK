@@ -12,6 +12,9 @@ import appStore from "./src/utils/appStore";
 import Login from "./src/components/Login";
 import ProtectedRoute from "./src/components/ProtectedRoute";
 import Accordion from "./src/components/Accordion/Accordion";
+import Comments from "./src/components/NestedComments/Comments";
+import ImageSlider from "./src/components/ImageSlider/ImageSlider";
+import Pagination from "./src/components/pagination/Pagination";
 
 const AppLayout = () => {
   return (
@@ -57,6 +60,18 @@ const appRouter = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/comments",
+        element: <Comments />,
+      },
+      {
+        path: "/image-slider",
+        element: <ImageSlider />,
+      },
+      {
+        path: "/pagination",
+        element: <Pagination />,
       },
     ],
     errorElement: <Error />,
