@@ -41,6 +41,12 @@ const Header = () => {
           <li className="px-4">
             <Link to="/pagination">Pagination</Link>
           </li>
+          <li className="px-4">
+            <Link to="/live-chat">Live Chat</Link>
+          </li>
+          <li className="px-4">
+            <Link to="/search">Search</Link>
+          </li>
           <li className="px-4 font-bold">Cart - ({cartItems.length} Items)</li>
           <li className="px-4">
             <Link to="/login">Login</Link>

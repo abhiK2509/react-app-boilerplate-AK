@@ -15,6 +15,8 @@ import Accordion from "./src/components/Accordion/Accordion";
 import Comments from "./src/components/NestedComments/Comments";
 import ImageSlider from "./src/components/ImageSlider/ImageSlider";
 import Pagination from "./src/components/pagination/Pagination";
+import LiveChat from "./src/components/live-chat/LiveChat";
+import Search from "./src/components/search/Search";
 
 const AppLayout = () => {
   return (
@@ -72,6 +74,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/pagination",
         element: <Pagination />,
+      },
+      {
+        path: "/live-chat",
+        element: <LiveChat />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
       },
     ],
     errorElement: <Error />,
